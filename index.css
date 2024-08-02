@@ -135,14 +135,25 @@ body{
     box-shadow: 1px 1px 1px 2px #d0ab08;
     outline: none;
 }
-
-.design{
-    background-color: rgb(139, 0, 51);
-    border-radius: 10px;
-    padding-left: 8px;
-    width: 80px;
+.Question{
+    padding: 0px 0px 10px;
 }
-
+.question{
+    border-radius: 5px;
+    background-color: rgba(52, 35, 113, 1);
+    color: white;
+    width: 80px;
+    outline: none;
+    border: none;
+}
+.question.active{
+    background-color: rgb(139, 0, 51);
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 .button, .btn_previous, .btn_next, .btn_submit{
      background-color: #d0ab08;
      color: bisque;

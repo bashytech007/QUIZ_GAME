@@ -3,8 +3,8 @@ const btn_previous=document.querySelector('.btn_previous')
 const btn_next=document.querySelector('.btn_next')
 const btn_submit=document.querySelector('.btn_submit')
 const quiz_text=document.querySelector('.quiz_text')
-const button=document.querySelector('.button')
-const question=document.querySelector('.question')
+const reset=document.querySelector('.reset')
+const question=document.querySelectorAll('.question')
 console.log(question)
 let score=0
 const quiz_questions=[
@@ -39,44 +39,64 @@ const quiz_questions=[
        }
 
 ]
-// function options(arr){
-//         for(let i=0; i< arr.lenth) {
-          
-//         }
-        
-//     }
-    // console.log(options(quiz_questions[0].option))
-    // console.log(quiz.option)
-console.log(quiz_questions[0].option)
-let resettButton=(e)=>{
-    // function options(arr){
-    //     arr.forEach(function(element,index){
-    //         let eachOption=element 
-    //     });
-    // }
-    // options(quiz_questions[index].option)
-    // console.log(qu.option)
+
+
+
+
+// const showQuestion=()=>{
+
+
+// }
+let resettButton =(e)=>{
+const question=document.querySelectorAll('.question')
+console.log(question)
    score=0
+   quiz_text.innerHTML=""
    quiz_text.innerHTML=`
-                <div class="take-quiz">
-                    <p>1. Who is the mother of Jesus</p>
-                    <p class='question'>a. Jane</p>
-                    <p>b. Mary</p>
-                    <p>c. Gonta</p>
-                    <p>d. Racheal</p>
+            <div class="take-quiz">
+                    <p class="Question">1. Who is the mother of Jesus</p>
+                    <div class="options">
+                    <button class='question'>a. Jane</button>
+                    <button class='question'>b. Mary</button>
+                    <button class='question'>c. Gonta</button>
+                    <button class='question'>d. Racheal</button>
+                    </div>
+                    
                 </div> 
                 <div class="buton">
                     <button class="btn_previous">Previous</button>
                     <button class="btn_submit">Submit</button>
                     <button class="btn_next">Next</button>
-                </div>
+                </div>   
    
    `
+   
+}
+ reset.addEventListener('click',resettButton )
+
+// This function removes active class from all other buttons
+const removeActiveClass=(arr)=>{
+    arr.forEach(btn=> btn.classList.remove('active'))
+}
+ removeActiveClass(question)
+ const optionSelected=()=>{
+   removeActiveClass(question)
+   button.classList.add("active")
 
 }
-button.addEventListener('click', resettButton)
-const optionSelected=()=>{
-   question.classList.add('question', "design")
+
+question.forEach(button => {
+    const optionSelected=()=>{
+   removeActiveClass(question)
+   button.classList.add("active")
 
 }
-question.addEventListener('click', optionSelected)
+    button.addEventListener('click',optionSelected )
+});
+
+
+
+
+// const showQuestion=()=>{
+    
+// }
