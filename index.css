@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(52, 35, 113, 1);
+}
+
+/* ----------------------------------------------NAV_BAR--------------------------------------------------- */
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    /* border: 2px solid red; */
+
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 14px;
+    color: white;
+    
+
+
+}
+
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+.links li{
+    list-style-type: none;
+    color: #d0ab08;
+    font-size: 13px;
+}
+   
+
+.Bible_logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+.bible {
+    color: #d0ab08;
+}
+.bible1 {
+    color: bisque;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------------------NAV_BAR--------------------------------------------------- */
+
+/* ----------------------------------------------NAV_BAR--------------------------------------------------- */
+
+#quiz_game{
+    display: flex;
+    flex-direction:row;
+    width: 70%;
+    color: bisque;
+    /* justify-content: center;
+    align-items: center;*/
+    /* border: 2px solid red; */
+    margin: 0 auto;
+
+}
+
+
+
+.quiz_text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+    width:50%;
+    border-bottom: 0.5px solid #d0ab08;
+    border-left: 1px solid #b4b3af ;
+    /* border-top: 1px solid #b4b3af; */
+    border-radius:10% 0 0px 20% ;
+}
+.heading{
+    color:#d0ab08;
+}
+.text_one{
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 13px;
+    font-family: "EB Garamond", serif;
+
+}
+
+.quiz_image{
+    width: 50%;
+    border-radius: 0px 5px 20% 5px;
+}
+.study_picture {
+    width: fit-content;
+    border-radius: 0px 5px 10% 5px;
+
+}
+.take-quiz{
+    padding: 30px;
+    background-color:#d0ab08;
+    color:rgba(52, 35, 113, 1);
+    /* color: #d0ab08; */
+    border-radius: 20px;
+    margin: 10px 0px;
+    align-self: center;
+    font-family:"EB Garamond", serif ;
+    font-size: 16px;
+    border: 2px solid rgba(52, 35, 113, 1);
+    box-shadow: 1px 1px 1px 2px #d0ab08;
+    outline: none;
+}
+
+.design{
+    background-color: rgb(139, 0, 51);
+    border-radius: 10px;
+    padding-left: 8px;
+    width: 80px;
+}
+
+.button, .btn_previous, .btn_next, .btn_submit{
+     background-color: #d0ab08;
+     color: bisque;
+     /* width: 200px;
+     padding: 12px; */
+     border: none;
+     outline: none;
+     box-shadow: 1px 1px 1px 2px bisque;
+     border-radius: 10px;
+     margin: 30px 0px 0px 0px;
+
+}
+.button{
+    width: 200px;
+    padding: 12px;
+}
+.btn_previous,.btn_next,.btn_submit{
+    width: 80px;
+    padding: 6px;
+}
+.buton{
+ display: flex;
+ flex-direction: row;
+ justify-content:flex-end;
+ /* border: 2px solid red; */
+ gap: 20px;
+}
+
+/* ----------------------------------------------NAV_BAR--------------------------------------------------- */
+
+/* ----------------------------------------------NAV_BAR--------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------NAV_BAR--------------------------------------------------- */
+/* ----------------------------------------------NAV_BAR--------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------NAV_BAR--------------------------------------------------- */
+
