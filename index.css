@@ -93,7 +93,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 7px;
     padding: 20px 10px;
     width:50%;
     border-bottom: 0.5px solid #d0ab08;
@@ -122,7 +122,7 @@ body{
 
 }
 .take-quiz{
-    padding: 30px;
+    padding: 20px 30px 30px;
     background-color:#d0ab08;
     color:rgba(52, 35, 113, 1);
     /* color: #d0ab08; */
@@ -134,17 +134,39 @@ body{
     border: 2px solid rgba(52, 35, 113, 1);
     box-shadow: 1px 1px 1px 2px #d0ab08;
     outline: none;
+    width: 250px;
+}
+.take {
+    padding: 30px;
+    background-color: #d0ab08;
+    color: rgba(52, 35, 113, 1);
+    /* color: #d0ab08; */
+    border-radius: 14px;
+    margin: 10px 0px;
+    align-self: center;
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+    border: 2px solid rgba(52, 35, 113, 1);
+    box-shadow: 1px 1px 1px 2px #d0ab08;
+    outline: none;
+    width: 250px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .Question{
     padding: 0px 0px 10px;
 }
 .question{
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: rgba(52, 35, 113, 1);
-    color: white;
-    width: 80px;
+    color: bisque;
     outline: none;
     border: none;
+    padding: 5px;
+    font-size: 11px;
 }
 .question.active{
     background-color: rgb(139, 0, 51);
@@ -181,7 +203,11 @@ body{
  /* border: 2px solid red; */
  gap: 20px;
 }
-
+.neww{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
 /* ----------------------------------------------NAV_BAR--------------------------------------------------- */
 
 /* ----------------------------------------------NAV_BAR--------------------------------------------------- */
